@@ -1,7 +1,7 @@
 # Bangalore Home Price Prediction
 
 ## Project Overview
-The goal of this project is to predict the price of homes in Bangalore based on various features such as area in square foots, number of bedrooms and bathrooms, and other location-related factors.
+The goal of this project is to predict the price of homes in Bangalore based on various features such as area in square foots, number of bedrooms and bathrooms, and other location-related factors. This project predicts home prices in Bangalore using machine learning, specifically the Linear Regression algorithm. The dataset, containing features like area, number of bedrooms, and location, was preprocessed through data cleaning, handling missing values, feature engineering, and scaling. Exploratory Data Analysis (EDA) helped identify key correlations, guiding feature selection. The model was trained using the scikit-learn library, evaluated for accuracy with metrics like Mean Squared Error and R-squared, and fine-tuned using cross-validation. After training, the model was serialized with Pickle and integrated into a Flask backend, where users can input property details via a frontend built with HTML, CSS, and JavaScript to receive real-time price predictions.
 
 ## The project consists of multiple components:
 - **Frontend:** A web page built with HTML, CSS, and JavaScript for users to input data and receive predictions.
