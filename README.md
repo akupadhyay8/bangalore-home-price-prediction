@@ -10,6 +10,26 @@ The goal of this project is to predict the price of homes in Bangalore based on 
 - **Dataset:** A CSV file with information on home features like area, number of bedrooms, location, and the price of homes.
 
 ## Files and Directories
+
+```
+ML Project/
+ ├── client
+ │    ├── index.html
+ │    ├── styoe.css
+ │    └── script.js
+ ├── DataSet/
+ │    ├── Bengaluru_House_Data.csv
+ ├── Model/
+ │    ├── bhp.ipynb
+ │    └── columns.json
+ ├── server/
+ │    ├── artifacts/
+ │    		├── banglore_home_prices_model.pickle
+ │    		└── columns.json
+ └── server.py
+ └── util.py
+```
+
 - **client/:** Contains the frontend files (HTML, CSS, and JavaScript).
 - **dataset/:** Contains the dataset (CSV file) used to train the model.
 - **model/:** Contains the Jupyter notebook for model training, the trained pickle file, and a JSON file with location data.
