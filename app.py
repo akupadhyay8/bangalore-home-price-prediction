@@ -39,7 +39,7 @@ def get_base64_of_image(image_path):
     with open(image_path, "rb") as img_file:
         return base64.b64encode(img_file.read()).decode()
 
-# Set background image using local path
+# Set background image
 def set_background(image_path):
     base64_image = get_base64_of_image(image_path)
     st.markdown(
