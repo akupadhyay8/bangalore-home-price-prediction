@@ -1,11 +1,10 @@
 import streamlit as st
-import pickle
+import joblib
 import json
 import numpy as np
 import base64
 import os
 
-# ✅ Must be the first Streamlit command
 st.set_page_config(page_title="🏠 Bangalore House Price Predictor")
 
 # Load artifacts
@@ -14,9 +13,7 @@ def load_saved_artifacts():
         data_columns = json.load(f)['data_columns']
         locations = data_columns[3:]
 
-    with open('server/artifacts/banglore_home_prices_model.pickle', 'rb') as f:
-        model = pickle.load(f)
-
+    model = joblib.load('server/artifacts/banglore_home_prices_model.pkl')
     return data_columns, locations, model
 
 data_columns, location_list, model = load_saved_artifacts()
@@ -59,7 +56,7 @@ def set_background(image_path):
         unsafe_allow_html=True
     )
 
-# ✅ Image path (you can adjust if deploying later)
+# ✅ Image path 
 image_path = "Image/Background.jpg"
 set_background(image_path)
 
