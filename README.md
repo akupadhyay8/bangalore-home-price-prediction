@@ -29,3 +29,40 @@ It uses a machine learning model trained on real-world housing data with `Linear
    ```bash
    git clone https://github.com/akupadhyay8/bangalore-home-price-prediction.git
    cd bangalore-home-price-prediction
+
+## 📁 Project Structure
+
+bangalore-home-price-prediction/
+├── app.py                     # Main Streamlit app
+├── requirements.txt           # Dependencies
+├── server/
+│   └── artifacts/
+│       ├── banglore_home_prices_model.pkl
+│       └── columns.json
+├── Image/
+│   └── Background.jpg
+
+
+## 🧠 Tech Stack
+
+- Numpy
+
+- Pandas
+
+- scikit-learn
+
+- Python
+
+- Streamlit
+
+- Joblib
+
+
+## ⭐️ Show Your Support
+If you found this project helpful:
+
+- Give it a ⭐ on GitHub
+
+- Share the live app link with others
+
+- Fork it and build your own version!
