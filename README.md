@@ -32,6 +32,7 @@ It uses a machine learning model trained on real-world housing data with `Linear
 
 ## 📁 Project Structure
 
+```
 bangalore-home-price-prediction/
 ├── app.py                     # Main Streamlit app
 ├── requirements.txt           # Dependencies
@@ -41,7 +42,7 @@ bangalore-home-price-prediction/
 │       └── columns.json
 ├── Image/
 │   └── Background.jpg
-
+```
 
 ## 🧠 Tech Stack
 
